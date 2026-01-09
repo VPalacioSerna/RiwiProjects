@@ -1,0 +1,101 @@
+DOM -> representación en memoria que los leguajes como JS puede manipular
+
+
+NODOS: son como las ramas del DOM
+- Document Node: es la raiz del arbol, representa el docuemnto completo (windows.document)
+- Element Node: son las etiquetas html (div, h1, p)
+- Text Node: contenido que hay dentro de la etiquetas (seria un hijo nodo del elemento)
+- Attribute Node: son los atributos de las etiquetas (class, id, src)
+- Comment Node: los comentarios del html son nodos tambien
+
+- typeof valor (Sintaxis de operador)
+
+- typeof(valor) (Sintaxis de función)
+
+.getElementById('Id') -> trae un elemento que se nombre con un respectivo ID
+
+.innerHTML -> da acceso a la estructura de html que esta contenida dentro del elemtento que se llamo
+
+.innerText -> retorna el contenido dentro del elemento
+
+.tagName -> retorna el valor de la etiquetas
+
+.getElementByClassName('ClassName') -> trae los elemtentos con esa clase 
+
+('clase'[i]) -> para acceder a los elementos individualmente (se maneja como una lista)
+
+.getElementByTagName('tagName') -> trae los elementos por la tag correspondiente
+
+.querySelector((id(#), class(.) o tag)) -> sirve como los getElementBy solo que es mas general aunque solo trae el primero que encuentra ya sea con: id(#), class(.) o tag o mas avanzado ('div > p.activo') (busca un parrafo con clase 'activo' dentro de un div)
+
+.querySelectorAll() -> 
+
+
+
+
+
+
+
+
+
+TIPOS DE DATOS
+
+Tipo Object -> lo muestra cuando quiere decir que la informacion es demasiado compleja para mostyrarla como una simple palabra o numero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIFERENCIAS ENTRE FOR Y FOREACH
+
+-Sintaxis Basica -> 
+FOR: controla todo manualmente, el indice inicial, la condicion para terminar el bucle y el cambio del indice con cada iteracion
+
+FOREACH: (no se definen condiciones) itera automaticamente por cada elemento, proporcionando el elemento y el indice (opcional), 
+
+
+-Control de flujo -> 
+FOR: se puede utilizar break, continue o return para saltar una iteracion 
+
+FOREACH: no se puede utilizar ni break ni foreach, sino JS lanzara un error, solo return y no habrian mas iteraciones
+
+-Rendimiento ->
+FOR: el puntero de ejecucion salta de regreso al inicio del bloque de codigo para seguir con la siguiente ejecucion
+
+FOREACH: al contrario de FOR cada vez que va a hacer una iteracion debe llamar a la funcion y hace validaciones, lo que lo hace mas lento
+
+
+-Operaciones asincronicas -> obtener datos
+FOR: la iteracion con el for se detiene hasta que el fetch (peticiones HTTP) actual termina, se usa cuando el orden importa
+
+FOREACH: la iteracion se hace casi paralela ya que manda casi todas las funciones al mismo tiempo, 
+
+
+* codigo sincrono y asincrono en JS
+
+Síncrono (Fila del banco): El cajero atiende a una persona y todos los demás deben esperar quietos. Nadie más avanza hasta que el primero termina.
+
+Asíncrono (Restaurante): Pides tu comida (tarea larga), el mesero te da un ticket y tú puedes seguir hablando o revisando tu celular mientras la cocina trabaja. No tienes que quedarte parado frente al mostrador bloqueando a los demás clientes.
+
+
