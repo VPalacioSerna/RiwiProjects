@@ -28,7 +28,7 @@ NODOS: son como las ramas del DOM
 
 .querySelector((id(#), class(.) o tag)) -> sirve como los getElementBy solo que es mas general aunque solo trae el primero que encuentra ya sea con: id(#), class(.) o tag o mas avanzado ('div > p.activo') (busca un parrafo con clase 'activo' dentro de un div)
 
-.querySelectorAll() -> 
+.querySelectorAll() -> retorna la coleccion de HTML con todos los elementos que cumplen con ese criterio
 
 
 
