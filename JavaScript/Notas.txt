@@ -1,3 +1,59 @@
+Obligacion del ; ->
+* Sentencias (acciones):se pone ; en instrucciones individuales (declaracion de variables, asignacion o cambios de valor, llamadas a funciones y retorno de valores).
+* Bloques (estructuras): NO se pone ; despues de condicionales, bucles o declaraciones de funciones y clases
+
+Funciones basicas que solo son del entorno navegador ->
+* alert(): muestra un mensaje
+* confirm(): muestra un cuadro de dialogo con dos botones "OK" "CANCEL" 
+* prompt(): pide un valor al usuario
+
+
+Tipos de console -> 
+* console.log() -> Imprime cualquier tipo de mensaje
+* console.error(): Imprime un mensaje de error.
+* console.warn(): Imprime un mensaje de advertencia.
+* console.info(): Imprime un mensaje de información.
+
+
+Operador typeof -> devuelve una cadena de texto que indica el tipo de un operando
+* typeof MAGIC_NUMBER // "number"
+* si el typeof es null, JS devuelve un objeto, si se quiere comprobar que es null hay que usar la comparacion estricta (===)
+
+
+Funciones ->
+forma 1: declaracion de una funcion
+function nameFunction(parametros) {
+    console.log("bloqueDeCodigo");
+}
+
+forma 2: funcion anonima
+const suma = function (a, b) {
+    return a + b;
+}
+
+forma 3: funcion flecha
+const sumar = (a, b) => {
+    return a + b;
+}
+    forma 3.2: return implicito (miniFunction)
+    const sumar = (a, b) => a + b;
+
+forma 4: Recursividad (se llama a ella)
+function cuentaAtras(numero) {
+  if (numero < 0) {
+    return
+  }
+  console.log(numero)
+  cuentaAtras(numero - 1)
+}
+
+
+
+
+
+
+
+
 DOM -> representación en memoria que los leguajes como JS puede manipular
 
 
@@ -13,6 +69,7 @@ NODOS: son como las ramas del DOM
 - typeof(valor) (Sintaxis de función)
 
 .getElementById('Id') -> trae un elemento que se nombre con un respectivo ID
+(contenedores principales, modales, etc.)
 
 .innerHTML -> da acceso a la estructura de html que esta contenida dentro del elemtento que se llamo
 
@@ -26,7 +83,10 @@ NODOS: son como las ramas del DOM
 
 .getElementByTagName('tagName') -> trae los elementos por la tag correspondiente
 
-.querySelector((id(#), class(.) o tag)) -> sirve como los getElementBy solo que es mas general aunque solo trae el primero que encuentra ya sea con: id(#), class(.) o tag o mas avanzado ('div > p.activo') (busca un parrafo con clase 'activo' dentro de un div)
+.getElementByName('name') -> para elementon con atributo name (util en formularios, radios)
+<input>, <select>, <textarea>
+
+.querySelector((id(#), class(.) o tag)) -> (por clase + tag + atributo, :nth-child, etc.) sirve como los getElementBy solo que es mas general aunque solo trae el primero que encuentra ya sea con: id(#), class(.) o tag o mas avanzado ('div > p.activo') (busca un parrafo con clase 'activo' dentro de un div)
 
 .querySelectorAll() -> retorna la coleccion de HTML con todos los elementos que cumplen con ese criterio
 
