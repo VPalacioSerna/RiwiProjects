@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- PRIMERA CARD CON FORMULARIO PARA AGREGAR UN NUEVO ADMINISTRADOR -->
+      <div class="row">
+        <div class="card m-3 p-3">
+          <div class="card-header">
+            <h5>Formulario para agregar usuarios</h5>
+          </div>
+          <div class="card-body">
+            <form class="form-control" action="">
+              <label for="userName">Nombre</label>
+              <input type="text" class="form-control" id="userName" />
+              <label for="userLastName">Apellido</label>
+              <input type="text" class="form-control" id="userLastName" />
+              <label for="userNickName">Nombre de usuario</label>
+              <input type="text" class="form-control" id="userNickName" />
+              <label for="userPass">Contraseña</label>
+              <input type="text" class="form-control" id="userPass" />
+            </form>
+            <button type="button" id="addUserBtn" class="btn btn-primary mt-3">
+              Agregar usuario
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- SEGUNDA CARD PARA VER LA LISTA DE ADMINISTRADORES AGREGADOS -->
+      <div class="row">
+        <div class="card m-3 p-3">
+          <div class="card-header">
+            <h5>Lista de usuarios</h5>
+          </div>
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Nombre de usuario</th>
+                  <th>Contraseña</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+                <!-- LOS USARIOS SE VAN AGREGANDO EN ESTA TABLA -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JavaScript/admin-crud.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

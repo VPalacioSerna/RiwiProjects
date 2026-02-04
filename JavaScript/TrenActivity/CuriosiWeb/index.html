@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuriosiWeb | Home</title>
+    <!--Link para bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Link para los iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!--Link de css-->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-light">
+
+    <!--Inicio Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
+            <div class="container d-flex justify-content-between align-items-center">
+        
+                <a class="navbar-brand d-flex align-items-center m-0" href="#">
+                    <div class="me-2"><img src="./img/icons/icon.png" alt=""></div>
+                    <span class="fw-bold fs-4">CuriosiWeb</span>
+                </a>
+
+                <div>
+                    <a class="btn btn-light rounded-3 px-4 py-2 fw-semibold d-flex align-items-center" href="./login.html">
+                        <i class="bi bi-person-fill me-2"></i> Login
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!--Inicio Main-->
+    <main>
+        <!--Inicio Hero-->
+        <section class="Hero">
+            <div class="container mt-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card bg-dark text-white border-0 overflow-hidden rounded-4 ">
+                            <img src="./img/shoes/men-hero.png" class="card-img opacity-50" alt="Men's Collection" style="height: 400px;">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+                                <h2 class="fw-bold">Men's Collection</h2>
+                                <p>Dominate the court with pro-grade equipment.</p>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-outline-light rounded-3 bg-dark bg-opacity-25" 
+                                    onclick="window.open('https://wa.me/573012671400?text=Hola! Quiero la Men´s Collection')">
+                                        <i class="bi bi-whatsapp"></i> WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card bg-dark text-white border-0 overflow-hidden rounded-4 ">
+                            <img src="./img/shoes/women-hero.png" class="card-img opacity-50" alt="Women's Collection" style="height: 400px;">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+                                <h2 class="fw-bold">Women's Collection</h2>
+                                <p>Style meets high-performance on every match.</p>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-outline-light rounded-3 bg-dark bg-opacity-25"
+                                    onclick="window.open('https://wa.me/573012671400?text=Hola! Quiero la Women´s Collection')">
+                                        <i class="bi bi-whatsapp"></i> WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Lista de zapatos-->
+        <section class="mt-5 lista-cards">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h3 class="fw-bold m-0">Ultima colección</h3>
+                        <p class="text-muted">(n cantidad) productos</p>
+                    </div>
+                </div>
+
+                <div id="list-shoes" class="row g-4">
+                  <a href="./landingInformation.html"></a>
+                    <!--Aqui va la lista de zapatos-->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Inicio Footer-->
+    <footer class="bg-white pt-5 pb-3 border-top mt-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <div class="col-12 col-md-3">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./img/icons/icon.png" alt="Logo" class="me-2">
+                        <h5 class="fw-bold m-0">CuriosiWeb</h5>
+                    </div>
+                    <p class="text-muted small">The world's premier destination for high-end tennis equipment and athlete services.</p>
+                    <div class="d-flex gap-3 fs-5 text-muted">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-envelope "></i>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2 offset-md-1">
+                    <h6 class="fw-bold mb-3">Explore</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2">New Arrivals</li>
+                        <li class="mb-2">Men's Gear</li>
+                        <li class="mb-2">Women's Gear</li>
+                        <li class="mb-2">Kid's Corner</li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold mb-3">Support</h6>
+                    <ul class="list-unstyled text-muted small">
+                        <li class="mb-2">Shipping Info</li>
+                        <li class="mb-2">Returns</li>
+                        <li class="mb-2">Contact Us</li>
+                        <li class="mb-2">Size Guide</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-muted small">Get 10% off your first order when you subscribe.</p>
+                    <div class="d-flex mb-3">
+                        <input type="email" class="form-control border-0 bg-light p-2 shadow-none" placeholder="Email address" style="border-radius: 8px 0 0 8px;">
+                        <button class="btn btn-success px-4" type="button" style="border-radius: 0 8px 8px 0;">Join</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="mt-5 mb-4 text-muted opacity-25">
+            <div class="text-center">
+                <p class="text-muted small">© 2026 CuriosiWeb Tenis. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript/landing.js"></script>
+</body>
+</html>
+

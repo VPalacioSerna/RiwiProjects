@@ -1,0 +1,121 @@
+/*Styles de Login*/
+
+
+/*Styles de Landing*/
+/*Header*/
+.navbar-brand span {
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+}
+
+.btn-light {
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+    color: #333;
+}
+
+/* Ajuste para el icono de usuario */
+.bi-person-fill {
+    font-size: 1.1rem;
+}
+
+/*Main*/
+.btn-success {
+    background-color: #00ff7f ;
+    border-color: #00ff7f ;
+    color: #000 ;
+    font-weight: 600;
+}
+
+.badge .bg-success {
+    background-color: #00ff7f ;
+    color: #000;
+}
+
+.card-img-top {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+
+/*Footer*/
+footer {
+    font-family: 'Inter', sans-serif;
+}
+
+footer .input-group .form-control:focus {
+    background-color: #f1f1f1;
+}
+
+
+/*Landing info products*/
+.ls-wide {
+    letter-spacing: 1.5px;
+}
+
+.btn-outline-secondary {
+    border-color: #dee2e6;
+    color: #495057;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+footer {
+    font-size: 1.1rem;
+}
+
+/*Dashboard*/
+
+.sidebar {
+  width:240px;
+  min-height:100vh;
+  background:#fff;
+  border-right:1px solid #e5e7eb;
+  display:flex;
+  flex-direction:column;
+}
+.brand {
+  font-size:20px;
+  font-weight:700;
+  padding:20px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.nav-link {
+  margin:5px 12px;
+  border-radius:8px;
+  color:#374151;
+}
+.nav-link.active {
+  background:#e6f9ef;
+  color:#16a34a;
+  font-weight:600;
+}
+.topbar {
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+  padding:15px 25px;
+}
+.btn-green {
+  background:#22c55e;
+  color:white;
+  border-radius:10px;
+  font-weight:600;
+}
+.badge-soft {
+  background:#eef2f7;
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:12px;
+}
+.status-green { color:#16a34a; font-weight:600 }
+
+.product-img {
+  width:42px;
+  height:42px;
+  background:#e5e7eb;
+  border-radius:10px;
+}
+
+
